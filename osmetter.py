@@ -65,6 +65,21 @@ def calcular_valor_estrutura(membros_por_nivel, n_departamentos, intensidade_int
     )
     return valor
 
+# Função para calcular o nível de complexidade organizacional
+def calcular_complexidade(membros, OS, CC):
+    # Aqui, definimos a complexidade como uma combinação linear simples das métricas
+    # Ajuste os pesos conforme necessário
+    complexidade = 0.3 * membros + 0.4 * OS + 0.3 * CC
+    return complexidade
+
+# Função para prever a qualidade do produto
+def prever_qualidade(complexidade):
+    # Simples inverso da complexidade como uma medida de qualidade
+    # Quanto maior a complexidade, menor a qualidade
+    # Ajuste essa função conforme a necessidade
+    qualidade = 100 / (1 + complexidade)
+    return qualidade
+
 def processar_planilha(entrada, saida):
     df = read_excel(entrada)
 
@@ -93,6 +108,17 @@ def processar_planilha(entrada, saida):
 
             resultado = {col: row[col] for col in df.columns}
             resultado['Valor_da_Estrutura'] = valor
+
+            # Calcular a complexidade e a qualidade
+            membros = sum(membros_por_nivel.values())
+            OS = row['Org_Size']
+            CC = row['CC']
+
+            complexidade = calcular_complexidade(membros, OS, CC)
+            qualidade = prever_qualidade(complexidade)
+
+            resultado['Complexidade Organizacional'] = complexidade
+            resultado['Qualidade Prevista'] = qualidade
 
             resultados.append(resultado)
         except Exception as e:
