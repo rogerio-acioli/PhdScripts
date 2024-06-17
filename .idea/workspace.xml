@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="16f3e0a0-49dc-434e-b6fa-88546ced6e5c" name="Changes" comment="Version 000 - Commit and Push na Branch correta">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/entropia_organizacional.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/estrutura_organizacional.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/osmeter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resultado_organizacional.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conwayslaw.py" beforeDir="false" afterPath="$PROJECT_DIR$/conwayslaw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dados_entrada.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/dados_entrada.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/networkentropy.py" beforeDir="false" afterPath="$PROJECT_DIR$/networkentropy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resultado_qualidade.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saida.xlsx" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;rogerio-acioli&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rogerio-acioli/PhdScripts.git&quot;,
+    &quot;accountId&quot;: &quot;849bdbf2-5b0f-4145-a434-170d7d74a7e0&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2hsHaq2jtPR9Otl4qZPonc3ONSL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python.conwayslaw.executor": "Run",
+    "Python.networkentropy.executor": "Run",
+    "Python.osdefinator.executor": "Run",
+    "Python.osmeter.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17890.14" />
+        <option value="bundled-python-sdk-5b207ade9991-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17890.14" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="16f3e0a0-49dc-434e-b6fa-88546ced6e5c" name="Changes" comment="" />
+      <created>1718375931516</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718375931516</updated>
+      <workItem from="1718375932791" duration="1379000" />
+      <workItem from="1718404733525" duration="8759000" />
+      <workItem from="1718575194128" duration="4804000" />
+    </task>
+    <task id="LOCAL-00001" summary="Version 000 - Commit and Push na Branch correta">
+      <option name="closed" value="true" />
+      <created>1718376052014</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718376052014</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Version 000 - Commit and Push na Branch correta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version 000 - Commit and Push na Branch correta" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Python$networkentropy.coverage" NAME="networkentropy Coverage Results" MODIFIED="1718580571847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$osdefinator.coverage" NAME="osdefinator Coverage Results" MODIFIED="1718582359948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$osmeter.coverage" NAME="osmeter Coverage Results" MODIFIED="1718583666704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$conwayslaw.coverage" NAME="conwayslaw Coverage Results" MODIFIED="1718583306615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
