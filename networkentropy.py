@@ -13,44 +13,52 @@ def read_excel(file_path):
 
 
 def calculate_entropies(df):
-    levels = df['Nível'].unique()
+    results = []
 
-    # Entropia Vertical (Distribuição dos níveis)
-    level_counts = df['Nível'].value_counts(normalize=True)
-    vertical_entropy = calculate_entropy(level_counts)
+    for index, row in df.iterrows():
+        levels = row['Níveis']
+        members_per_level = [row[f'Membros_Nivel_{i}'] for i in range(1, levels + 1) if
+                             not pd.isna(row[f'Membros_Nivel_{i}'])]
 
-    # Entropia Horizontal (Distribuição das unidades dentro de cada nível)
-    horizontal_entropies = []
-    for level in levels:
-        units_in_level = df[df['Nível'] == level]
-        unit_counts = units_in_level['Unidade'].value_counts(normalize=True)
-        horizontal_entropy = calculate_entropy(unit_counts)
-        horizontal_entropies.append(horizontal_entropy)
+        total_members = sum(members_per_level)
 
-    # Média da Entropia Horizontal
-    average_horizontal_entropy = np.mean(horizontal_entropies)
+        # Entropia Vertical (Distribuição dos níveis)
+        level_distribution = [members / total_members for members in members_per_level]
+        vertical_entropy = calculate_entropy(level_distribution)
 
-    # Entropia Total
-    total_entropy = vertical_entropy + average_horizontal_entropy
+        # Entropia Horizontal (Distribuição dos membros dentro de cada nível)
+        horizontal_entropies = []
+        for members in members_per_level:
+            if members > 0:
+                member_probability = 1 / members
+                horizontal_entropy = calculate_entropy([member_probability] * members)
+                horizontal_entropies.append(horizontal_entropy)
 
-    return vertical_entropy, average_horizontal_entropy, total_entropy
+        average_horizontal_entropy = np.mean(horizontal_entropies) if horizontal_entropies else 0
+
+        # Entropia Total
+        total_entropy = vertical_entropy + average_horizontal_entropy
+
+        results.append({
+            'Estrutura': row['Estrutura'],
+            'Entropia Vertical': vertical_entropy,
+            'Entropia Horizontal': average_horizontal_entropy,
+            'Entropia Total': total_entropy
+        })
+
+    return pd.DataFrame(results)
 
 
-def write_to_excel(file_path, vertical_entropy, horizontal_entropy, total_entropy):
-    output_df = pd.DataFrame({
-        'Entropia Vertical': [vertical_entropy],
-        'Entropia Horizontal': [horizontal_entropy],
-        'Entropia Total': [total_entropy]
-    })
-    output_df.to_excel(file_path, index=False)
+def write_to_excel(file_path, result_df):
+    result_df.to_excel(file_path, index=False)
 
 
 def main(input_file, output_file):
     df = read_excel(input_file)
-    vertical_entropy, horizontal_entropy, total_entropy = calculate_entropies(df)
-    write_to_excel(output_file, vertical_entropy, horizontal_entropy, total_entropy)
+    result_df = calculate_entropies(df)
+    write_to_excel(output_file, result_df)
 
 if __name__ == "__main__":
-    input_file = 'C:/Users/ra52440/Downloads/Exame Final P2/estrutura_organizacional.xlsx'  # Substitua pelo nome do seu arquivo de entrada
-    output_file = 'C:/Users/ra52440/Downloads/Exame Final P2/entropia_organizacional.xlsx'  # Nome do arquivo de saída
+    input_file = 'C:/Users/roger/OneDrive/Doutorado/Python/estrutura_organizacional.xlsx'  # Substitua pelo nome do seu arquivo de entrada
+    output_file = 'C:/Users/roger/OneDrive/Doutorado/Python/entropia_organizacional.xlsx'  # Nome do arquivo de saída
     main(input_file, output_file)
